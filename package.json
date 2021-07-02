@@ -10,7 +10,8 @@
     "watch:sb": "yarn start-storybook -p 9009 -s ./public/",
     "watch": "yarn next dev",
     "test": "jest",
-    "postinstall": "husky install"
+    "postinstall": "husky install",
+    "build": "yarn next build"
   },
   "lint-staged": {
     "*.{ts,tsx}": "eslint --fix --max-warnings=0",
@@ -58,6 +59,7 @@
     "commitlint": "12.1.4",
     "eslint": "7.29.0",
     "eslint-config-airbnb-base": "14.2.1",
+    "eslint-config-next": "11.0.1",
     "eslint-config-prettier": "8.3.0",
     "eslint-import-resolver-alias": "1.1.2",
     "eslint-plugin-import": "2.23.4",
