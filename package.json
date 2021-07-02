@@ -10,7 +10,8 @@
     "watch:sb": "yarn start-storybook -p 9009 -s ./public/",
     "watch": "yarn next dev",
     "test": "jest",
-    "postinstall": "husky install"
+    "postinstall": "husky install",
+    "build": "yarn next build"
   },
   "lint-staged": {
     "*.{ts,tsx}": "eslint --fix --max-warnings=0",
