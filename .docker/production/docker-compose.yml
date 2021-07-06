@@ -1,0 +1,62 @@
+version: '3.8'
+
+services:
+  redis:
+    image: redis:6-alpine@sha256:6833ca04ec87a2222928157125dffcca22c68e2db304164cc050ee9cc6b05b4e
+    restart: unless-stopped
+    networks:
+      - instamotion
+  nginx:
+    build:
+      context: ../..
+      dockerfile: .docker/Cache.Dockerfile
+    restart: unless-stopped
+    depends_on:
+      - server
+    links:
+      - server
+    ports:
+      - 1337:80
+    networks:
+      - instamotion
+      - web
+    labels:
+      - 'traefik.enable=true'
+      - 'traefik.http.routers.imdemo.rule=Host(`demo.im.dunklestoast.de`)'
+      - 'traefik.http.routers.imdemo.tls=true'
+      - 'traefik.http.routers.imdemo.tls.certresolver=lets-encrypt'
+      - 'traefik.http.services.imdemo.loadbalancer.server.port=80'
+      - 'traefik.http.middlewares.imdemo.compress=true'
+  server:
+    build:
+      context: ../..
+      dockerfile: .docker/Server.Dockerfile
+    networks:
+      - instamotion
+    depends_on:
+      - redis
+    environment:
+      REDIS_PORT: 6379
+      REDIS_HOST: redis
+      SERVER_PORT: 1337
+      SERVER_HOST: 0.0.0.0
+      LOG_LEVEL: info
+      NODE_ENV: production
+  storybook:
+    build:
+      context: ../..
+      dockerfile: .docker/Storybook.Dockerfile
+    networks:
+      - web
+    labels:
+      - 'traefik.enable=true'
+      - 'traefik.http.routers.imsb.rule=Host(`sb.im.dunklestoast.de`)'
+      - 'traefik.http.routers.imsb.tls=true'
+      - 'traefik.http.routers.imsb.tls.certresolver=lets-encrypt'
+      - 'traefik.http.services.imsb.loadbalancer.server.port=80'
+      - 'traefik.http.middlewares.imsb.compress=true'
+
+networks:
+  instamotion:
+  web:
+    external: true

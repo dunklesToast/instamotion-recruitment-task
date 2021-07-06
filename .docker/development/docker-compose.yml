@@ -1,0 +1,8 @@
+version: '3.8'
+
+services:
+  redis:
+    image: redis:6-alpine@sha256:6833ca04ec87a2222928157125dffcca22c68e2db304164cc050ee9cc6b05b4e
+    ports:
+      - 6379:6379
+    restart: unless-stopped

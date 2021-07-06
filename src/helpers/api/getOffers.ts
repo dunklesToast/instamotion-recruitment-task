@@ -1,3 +1,4 @@
+import { generateImgProxyUrl } from '@helpers/imgproxy';
 import type { CarBasicInfo } from '@type/Car.type';
 import axios from 'axios';
 
@@ -41,6 +42,9 @@ type GetOfferQuery = {
   filter: GetOfferFilter;
 };
 
+/**
+ * This Method does not use caching, since there are filters etc. and it would be a bit overkill for a demo
+ */
 export async function getOffers({
   page,
   sortBy = 'price.consumerPriceGross::asc',
@@ -57,6 +61,13 @@ export async function getOffers({
         ...filter,
       },
     },
+  });
+
+  const offers = response.data.data.getOffers.records;
+
+  offers.forEach((offer) => {
+    // eslint-disable-next-line no-param-reassign
+    offer.image = generateImgProxyUrl(offer.image, ':200:');
   });
 
   return response.data.data.getOffers.records;

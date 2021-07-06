@@ -56,12 +56,12 @@ export function CarTile({ car, className, id }: CarTileProps): JSX.Element {
         <Badge>{co2}g/km CO2</Badge>
       </S.Badges>
       <S.Actions>
-        <Link passHref href={`/angebot/${offerID}`}>
+        <Link passHref href={`/auto/${offerID}`}>
           <a>
             <Button secondary>Ab {monthlyInstallment}€/Monat</Button>
           </a>
         </Link>
-        <Link passHref href={`/angebot/${offerID}`}>
+        <Link passHref href={`/auto/${offerID}`}>
           <a>
             <Button>Für {price}€ kaufen</Button>
           </a>

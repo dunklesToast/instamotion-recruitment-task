@@ -279,7 +279,7 @@ exports[`CarTile 1`] = `
     class="c11"
   >
     <a
-      href="/angebot/non-existend"
+      href="/auto/non-existend"
     >
       <button
         class="c12"
@@ -296,7 +296,7 @@ exports[`CarTile 1`] = `
       </button>
     </a>
     <a
-      href="/angebot/non-existend"
+      href="/auto/non-existend"
     >
       <button
         class="c13"
