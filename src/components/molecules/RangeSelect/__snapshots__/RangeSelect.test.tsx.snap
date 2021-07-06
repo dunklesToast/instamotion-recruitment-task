@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RangeSelect 1`] = `
+.c0 {
+  font-family: 'PT Sans',sans-serif;
+  font-style: regular;
+  font-weight: 400;
+}
+
+.c1 {
+  border: 1px black solid;
+  border-radius: 4px;
+  font-family: 'PT Sans',sans-serif;
+  margin-top: 4px;
+  padding: 4px;
+  width: 80px;
+}
+
+.c2 {
+  margin: 0 8px;
+}
+
+<div
+  data-testid="range-select"
+>
+  <p
+    class="c0"
+  >
+    Test
+  </p>
+  <input
+    class="c1"
+    placeholder="von"
+    type="text"
+    value="5"
+  />
+  <span
+    class="c2"
+  >
+    -
+  </span>
+  <input
+    class="c1"
+    placeholder="bis"
+    type="text"
+    value="10"
+  />
+</div>
+`;

@@ -13,7 +13,7 @@ module.exports = {
   },
   testEnvironment: 'jsdom',
   collectCoverage: true,
-  coverageReporters: ['json', 'html', 'text'],
+  coverageReporters: ['json', 'html', 'text', 'lcov'],
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx'],
   resetMocks: true,
   bail: false,

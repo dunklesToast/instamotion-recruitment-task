@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FilterBuilder 1`] = `Object {}`;
+
+exports[`FilterBuilder 2`] = `
+Object {
+  "category": "AUTOMATIC_GEAR",
+  "exteriorColor": "BLACK",
+  "fuel": "ELECTRICITY",
+  "gearbox": "AUTOMATIC",
+  "make-model": "Opel:Adam",
+  "mileage": "[\\"5\\", \\"10\\"]",
+  "power": "[\\"5\\", \\"10\\"]",
+  "price": "[\\"5\\", \\"10\\"]",
+}
+`;

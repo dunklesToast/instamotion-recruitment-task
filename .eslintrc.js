@@ -19,7 +19,13 @@ module.exports = {
     ecmaVersion: 2020,
     sourceType: 'module',
   },
-  plugins: ['@typescript-eslint/eslint-plugin', 'import', 'simple-import-sort', 'react', 'react-hooks'],
+  plugins: [
+    '@typescript-eslint/eslint-plugin',
+    'import',
+    'simple-import-sort',
+    'react',
+    'react-hooks',
+  ],
   settings: {
     'import/resolver': {
       alias: {
@@ -50,6 +56,7 @@ module.exports = {
       rules: {
         'import/no-default-export': 'off',
         'react/jsx-props-no-spreading': 'off',
+        'react/forbid-dom-props': 'off',
       },
     },
     {
@@ -59,7 +66,7 @@ module.exports = {
       },
     },
     {
-      files: ['src/pages/*'],
+      files: ['src/pages/**'],
       rules: {
         'import/no-default-export': 'off',
       },
@@ -88,7 +95,10 @@ module.exports = {
     '@typescript-eslint/no-shadow': ['error'],
     'no-use-before-define': 'off',
     '@typescript-eslint/no-use-before-define': ['error'],
-    'padding-line-between-statements': ['error', { blankLine: 'always', prev: '*', next: 'return' }],
+    'padding-line-between-statements': [
+      'error',
+      { blankLine: 'always', prev: '*', next: 'return' },
+    ],
     'simple-import-sort/exports': ['error'],
     'simple-import-sort/imports': [
       'error',

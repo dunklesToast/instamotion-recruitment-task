@@ -1,0 +1,317 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CarTile 1`] = `
+.c5 {
+  font-family: 'PT Sans',sans-serif;
+  font-style: regular;
+  font-weight: 400;
+}
+
+.c6 {
+  font-family: 'PT Sans',sans-serif;
+  font-style: regular;
+  font-weight: 700;
+}
+
+.c9 {
+  background-color: rgba(196,196,196,0.5);
+  border: #c4c4c4 1px solid;
+  border-radius: 4px;
+  display: inline-block;
+  padding: 6px 8px;
+}
+
+.c12 {
+  background-color: #F7B628;
+  border: none;
+  border-radius: 8px;
+  color: black;
+  outline: none;
+  padding: 10px 28px;
+  -webkit-transition: background-color 0.1s ease-in-out;
+  transition: background-color 0.1s ease-in-out;
+}
+
+.c13 {
+  background-color: #0B4256;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  outline: none;
+  padding: 10px 28px;
+  -webkit-transition: background-color 0.1s ease-in-out;
+  transition: background-color 0.1s ease-in-out;
+}
+
+.c3 {
+  background-color: #0B4256;
+  border-bottom-left-radius: 4px;
+  border-top-left-radius: 4px;
+  color: white;
+  display: inline-block;
+  padding: 8px 32px 8px 8px;
+}
+
+.c0 {
+  background-color: white;
+  border-radius: 16px;
+  overflow: hidden;
+  padding: 8px 16px;
+}
+
+.c1 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-bottom: 32px;
+  position: relative;
+}
+
+.c2 {
+  border-radius: 16px;
+  max-height: 200px;
+  width: auto;
+}
+
+.c4 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  bottom: 16px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: absolute;
+  right: -16px;
+}
+
+.c7 {
+  font-size: 22px;
+  margin-bottom: 8px;
+}
+
+.c10 {
+  font-size: 10px;
+}
+
+.c11 {
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-top: 32px;
+}
+
+.c8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+@media (hover:hover) {
+  .c12:hover {
+    background-color: #cb9712;
+    cursor: pointer;
+  }
+}
+
+@media (max-width:1223px) {
+  .c12 {
+    padding: 10px 14px;
+  }
+}
+
+@media (hover:hover) {
+  .c13:hover {
+    background-color: #0e546d;
+    cursor: pointer;
+  }
+}
+
+@media (max-width:1223px) {
+  .c13 {
+    padding: 10px 14px;
+  }
+}
+
+<div
+  class="c0"
+  data-testid="cartile"
+>
+  <div
+    class="c1"
+  >
+    <img
+      alt="Volkswagen up!"
+      class="c2"
+      src="https://dqg4c1i67ln7w.cloudfront.net/photos/edited/4f066a2ceccb40b1ccbb533254e1b68b/image_01.jpg"
+    />
+    <div
+      class="c3 c4"
+      data-testid="imagebadge"
+    >
+      <p
+        class="c5"
+      >
+        1
+         
+        Bild
+      </p>
+    </div>
+  </div>
+  <p
+    class="c6 c7"
+  >
+    Volkswagen
+     
+    up!
+  </p>
+  <p
+    class="c5"
+  >
+    up! 1.0 move up! Klima PDC Einparkhilfe
+  </p>
+  <div
+    class="c8"
+  >
+    <div
+      class="c9"
+      data-testid="badge"
+    >
+      <p
+        class="c5"
+      >
+        PETROL
+      </p>
+    </div>
+    <div
+      class="c9"
+      data-testid="badge"
+    >
+      <p
+        class="c5"
+      >
+        61834
+        km
+      </p>
+    </div>
+    <div
+      class="c9"
+      data-testid="badge"
+    >
+      <p
+        class="c5"
+      >
+        05.2017
+         EZ
+      </p>
+    </div>
+    <div
+      class="c9"
+      data-testid="badge"
+    >
+      <p
+        class="c5"
+      >
+        44
+         PS
+      </p>
+    </div>
+    <div
+      class="c9"
+      data-testid="badge"
+    >
+      <p
+        class="c5"
+      >
+        4.4
+        l/100km 
+        <span
+          class="c10"
+        >
+          (komb)
+        </span>
+      </p>
+    </div>
+    <div
+      class="c9"
+      data-testid="badge"
+    >
+      <p
+        class="c5"
+      >
+        104
+        g/km CO2
+      </p>
+    </div>
+  </div>
+  <div
+    class="c11"
+  >
+    <a
+      href="/angebot/non-existend"
+    >
+      <button
+        class="c12"
+        data-testid="button"
+        type="button"
+      >
+        <p
+          class="c5"
+        >
+          Ab 
+          40
+          €/Monat
+        </p>
+      </button>
+    </a>
+    <a
+      href="/angebot/non-existend"
+    >
+      <button
+        class="c13"
+        data-testid="button"
+        type="button"
+      >
+        <p
+          class="c5"
+        >
+          Für 
+          6722
+          € kaufen
+        </p>
+      </button>
+    </a>
+  </div>
+</div>
+`;
