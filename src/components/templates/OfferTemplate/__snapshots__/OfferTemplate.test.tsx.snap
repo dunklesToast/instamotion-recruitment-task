@@ -1,0 +1,426 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`OfferTemplate 1`] = `
+.c2 {
+  font-family: 'PT Sans',sans-serif;
+  font-style: regular;
+  font-weight: 400;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 64px auto;
+  max-width: 1280px;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c3 {
+  font-size: 48px;
+  margin-bottom: 12px;
+}
+
+.c4 {
+  font-size: 18px;
+}
+
+.c5 {
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  margin-top: 16px;
+  width: 60%;
+}
+
+.c6 {
+  margin-top: 16px;
+  width: 60%;
+}
+
+<div
+  class="c0"
+  data-testid="offerlayout"
+>
+  <div
+    class="c1"
+  >
+    <p
+      class="c2 c3"
+    >
+      Renault
+       
+      Twingo
+    </p>
+    <p
+      class="c2 c4"
+    >
+      PETROL
+       • 
+      54000
+      km • 
+      04.2017
+       • 
+      51
+      PS •
+       
+      112
+      g/km CO2
+    </p>
+  </div>
+  <div
+    class="c5"
+  >
+    <div
+      aria-live="polite"
+      class="image-gallery"
+    >
+      <div
+        class="image-gallery-content bottom"
+      >
+        <div
+          class="image-gallery-slide-wrapper bottom"
+        >
+          <button
+            aria-label="Previous Slide"
+            class="image-gallery-icon image-gallery-left-nav"
+            type="button"
+          >
+            <svg
+              class="image-gallery-svg"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="1"
+              viewBox="6 0 12 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <polyline
+                points="15 18 9 12 15 6"
+              />
+            </svg>
+          </button>
+          <button
+            aria-label="Next Slide"
+            class="image-gallery-icon image-gallery-right-nav"
+            type="button"
+          >
+            <svg
+              class="image-gallery-svg"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="1"
+              viewBox="6 0 12 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <polyline
+                points="9 18 15 12 9 6"
+              />
+            </svg>
+          </button>
+          <div
+            class="image-gallery-swipe"
+          >
+            <div
+              class="image-gallery-slides"
+            >
+              <div
+                aria-label="Go to Slide 1"
+                class="image-gallery-slide  center "
+                role="button"
+                style="transform: translate3d(0%, 0, 0);"
+                tabindex="-1"
+              >
+                <div>
+                  <img
+                    class="image-gallery-image"
+                    src="https://dqg4c1i67ln7w.cloudfront.net/photos/edited/9a3d78f2c25a74cdfc226a3e8fe030c9/image_01.jpg"
+                  />
+                </div>
+              </div>
+              <div
+                aria-label="Go to Slide 2"
+                class="image-gallery-slide  right "
+                role="button"
+                style="transform: translate3d(100%, 0, 0);"
+                tabindex="-1"
+              >
+                <div>
+                  <img
+                    class="image-gallery-image"
+                    src="https://dqg4c1i67ln7w.cloudfront.net/photos/edited/9a3d78f2c25a74cdfc226a3e8fe030c9/image_02.jpg"
+                  />
+                </div>
+              </div>
+              <div
+                aria-label="Go to Slide 3"
+                class="image-gallery-slide  "
+                role="button"
+                style="transform: translate3d(200%, 0, 0);"
+                tabindex="-1"
+              >
+                <div
+                  style="height: 100%;"
+                />
+              </div>
+              <div
+                aria-label="Go to Slide 4"
+                class="image-gallery-slide  "
+                role="button"
+                style="transform: translate3d(300%, 0, 0);"
+                tabindex="-1"
+              >
+                <div
+                  style="height: 100%;"
+                />
+              </div>
+              <div
+                aria-label="Go to Slide 5"
+                class="image-gallery-slide  "
+                role="button"
+                style="transform: translate3d(400%, 0, 0);"
+                tabindex="-1"
+              >
+                <div
+                  style="height: 100%;"
+                />
+              </div>
+              <div
+                aria-label="Go to Slide 6"
+                class="image-gallery-slide  "
+                role="button"
+                style="transform: translate3d(500%, 0, 0);"
+                tabindex="-1"
+              >
+                <div
+                  style="height: 100%;"
+                />
+              </div>
+              <div
+                aria-label="Go to Slide 7"
+                class="image-gallery-slide  "
+                role="button"
+                style="transform: translate3d(600%, 0, 0);"
+                tabindex="-1"
+              >
+                <div
+                  style="height: 100%;"
+                />
+              </div>
+              <div
+                aria-label="Go to Slide 8"
+                class="image-gallery-slide  "
+                role="button"
+                style="transform: translate3d(700%, 0, 0);"
+                tabindex="-1"
+              >
+                <div
+                  style="height: 100%;"
+                />
+              </div>
+              <div
+                aria-label="Go to Slide 9"
+                class="image-gallery-slide  "
+                role="button"
+                style="transform: translate3d(800%, 0, 0);"
+                tabindex="-1"
+              >
+                <div
+                  style="height: 100%;"
+                />
+              </div>
+              <div
+                aria-label="Go to Slide 10"
+                class="image-gallery-slide  "
+                role="button"
+                style="transform: translate3d(900%, 0, 0);"
+                tabindex="-1"
+              >
+                <div
+                  style="height: 100%;"
+                />
+              </div>
+              <div
+                aria-label="Go to Slide 11"
+                class="image-gallery-slide  "
+                role="button"
+                style="transform: translate3d(1000%, 0, 0);"
+                tabindex="-1"
+              >
+                <div
+                  style="height: 100%;"
+                />
+              </div>
+              <div
+                aria-label="Go to Slide 12"
+                class="image-gallery-slide  left "
+                role="button"
+                style="transform: translate3d(-100%, 0, 0);"
+                tabindex="-1"
+              >
+                <div>
+                  <img
+                    class="image-gallery-image"
+                    src="https://dqg4c1i67ln7w.cloudfront.net/photos/edited/9a3d78f2c25a74cdfc226a3e8fe030c9/image_15.jpg"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            aria-label="Play or Pause Slideshow"
+            class="image-gallery-icon image-gallery-play-button"
+            type="button"
+          >
+            <svg
+              class="image-gallery-svg"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <polygon
+                points="5 3 19 12 5 21 5 3"
+              />
+            </svg>
+          </button>
+          <div
+            class="image-gallery-bullets"
+          >
+            <div
+              aria-label="Bullet Navigation"
+              class="image-gallery-bullets-container"
+              role="navigation"
+            >
+              <button
+                aria-label="Go to Slide 1"
+                aria-pressed="true"
+                class="image-gallery-bullet active"
+                type="button"
+              />
+              <button
+                aria-label="Go to Slide 2"
+                aria-pressed="false"
+                class="image-gallery-bullet"
+                type="button"
+              />
+              <button
+                aria-label="Go to Slide 3"
+                aria-pressed="false"
+                class="image-gallery-bullet"
+                type="button"
+              />
+              <button
+                aria-label="Go to Slide 4"
+                aria-pressed="false"
+                class="image-gallery-bullet"
+                type="button"
+              />
+              <button
+                aria-label="Go to Slide 5"
+                aria-pressed="false"
+                class="image-gallery-bullet"
+                type="button"
+              />
+              <button
+                aria-label="Go to Slide 6"
+                aria-pressed="false"
+                class="image-gallery-bullet"
+                type="button"
+              />
+              <button
+                aria-label="Go to Slide 7"
+                aria-pressed="false"
+                class="image-gallery-bullet"
+                type="button"
+              />
+              <button
+                aria-label="Go to Slide 8"
+                aria-pressed="false"
+                class="image-gallery-bullet"
+                type="button"
+              />
+              <button
+                aria-label="Go to Slide 9"
+                aria-pressed="false"
+                class="image-gallery-bullet"
+                type="button"
+              />
+              <button
+                aria-label="Go to Slide 10"
+                aria-pressed="false"
+                class="image-gallery-bullet"
+                type="button"
+              />
+              <button
+                aria-label="Go to Slide 11"
+                aria-pressed="false"
+                class="image-gallery-bullet"
+                type="button"
+              />
+              <button
+                aria-label="Go to Slide 12"
+                aria-pressed="false"
+                class="image-gallery-bullet"
+                type="button"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="c6"
+  >
+    <p
+      class="c2"
+    >
+      Sie sehen ein 
+      Twingo
+       von 
+      Renault
+      . Erstzugelassen im 
+      04.2017
+       
+      hat er bereits 
+      54000
+      km hinter sich.
+    </p>
+    <p
+      class="c2"
+    >
+      Der 
+      Twingo
+       tankt 
+      PETROL
+       und stößt nur 
+      112
+      g CO2 auf den Kilometer aus. Mit einem kombinierten Verbrauch von 
+      5
+      l/100km und einer frischen, 
+      WHITE
+       Farbe ist das Auto perfekt für Sie.
+    </p>
+  </div>
+</div>
+`;

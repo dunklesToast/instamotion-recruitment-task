@@ -5,14 +5,14 @@ module.exports = {
     const { type } = await prompter.prompt({
       type: 'select',
       name: 'type',
-      choices: ['Atom', 'Molecule', 'Organism'],
+      choices: ['Atom', 'Molecule', 'Organism', 'Template'],
       message: 'What type do you want to create?',
     });
 
     const { name } = await prompter.prompt({
       type: 'input',
       name: 'name',
-      message: "What's the name of your component?",
+      message: "What's the name of your " + type + '?',
     });
 
     if (name[0].toLowerCase() === name[0]) {

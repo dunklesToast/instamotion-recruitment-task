@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Select 1`] = `
+.c0 {
+  border: 1px black solid;
+  border-radius: 4px;
+  font-family: 'PT Sans',sans-serif;
+  margin-top: 4px;
+  padding: 4px;
+}
+
+<select
+  class="c0"
+  data-testid="select"
+  name="test"
+>
+  <option
+    value="a"
+  >
+    a
+  </option>
+  <option
+    value="b"
+  >
+    b
+  </option>
+</select>
+`;
