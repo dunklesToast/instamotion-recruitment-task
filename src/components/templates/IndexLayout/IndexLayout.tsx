@@ -13,6 +13,7 @@ import * as S from './IndexLayout.styled';
 export function IndexLayout({ offers, filters }: IndexServerProps['props']): JSX.Element {
   const [sOffers, setSOffers] = useState<CarBasicInfo[]>(offers);
   const [isLoading, setLoading] = useState(false);
+  const [hasMore, setHasMore] = useState(true);
   const [page, setPage] = useState(1);
   const [filter, setFilter] = useState<HTTPFilterBody>({});
 
@@ -22,7 +23,7 @@ export function IndexLayout({ offers, filters }: IndexServerProps['props']): JSX
     const observer = new IntersectionObserver(async (entries) => {
       const firstEntry = entries[0];
       if (firstEntry.isIntersecting) {
-        if (isLoading) {
+        if (isLoading || !hasMore) {
           return;
         }
         if (lastTile) {
@@ -31,6 +32,13 @@ export function IndexLayout({ offers, filters }: IndexServerProps['props']): JSX
         setLoading(true);
 
         const result = await makeRequest(page + 1, filter);
+
+        if (result.length === 0) {
+          setHasMore(false);
+          if (lastTile) {
+            observer.unobserve(lastTile);
+          }
+        }
 
         setSOffers((s) => s.concat(result));
         setLoading(false);
@@ -47,7 +55,7 @@ export function IndexLayout({ offers, filters }: IndexServerProps['props']): JSX
         observer.unobserve(lastTile);
       }
     };
-  }, [filter, isLoading, page]);
+  }, [filter, isLoading, page, hasMore]);
 
   const handleFilter = (selectedFilters: HTTPFilterBody) => {
     setLoading(true);
@@ -79,7 +87,7 @@ export function IndexLayout({ offers, filters }: IndexServerProps['props']): JSX
             <Text>Lade weitere Treffer...</Text>
           </S.LoadingContainer>
         )}
-        {sOffers.length === 0 && isLoading && (
+        {sOffers.length === 0 && !isLoading && (
           <S.LoadingContainer>
             <Text>Keine Fahrzeuge mit deinen Filtern gefunden...</Text>
           </S.LoadingContainer>

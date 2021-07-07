@@ -1,5 +1,6 @@
 import React from 'react';
 import type { Meta, Story } from '@storybook/react';
+import filters from '../../../mockdata/filters.json';
 import type { FilterBarProps } from './FilterBar';
 import { FilterBar } from './FilterBar';
 
@@ -16,7 +17,7 @@ const FilterComponent: Story<FilterBarProps> = (args) => (
 
 export const Default = FilterComponent.bind({});
 Default.args = {
-  children: 'Story of Filter',
+  filters,
 };
 
 Default.parameters = {

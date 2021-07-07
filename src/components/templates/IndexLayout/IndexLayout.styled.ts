@@ -14,6 +14,7 @@ export const IndexLayout = styled.div`
 
   ${untilTablet(css`
     flex-direction: column;
+    padding: 0 12px;
   `)}
 `;
 
@@ -28,6 +29,7 @@ export const FilterContainer = styled.div`
 
 export const ResultsContainer = styled.div`
   display: flex;
+  flex: 1 1 100%;
   flex-wrap: wrap;
   gap: 16px;
 `;

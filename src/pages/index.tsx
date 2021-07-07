@@ -4,6 +4,7 @@ import { getOffers } from '@helpers/api/getOffers';
 import { IndexLayout } from '@templates/IndexLayout/IndexLayout';
 import type { CarBasicInfo } from '@type/Car.type';
 import type { Filters } from '@type/Filter.type';
+import Head from 'next/head';
 
 export type IndexServerProps = {
   props: {
@@ -13,7 +14,15 @@ export type IndexServerProps = {
 };
 
 export default function Index({ offers, filters }: IndexServerProps['props']): JSX.Element {
-  return <IndexLayout offers={offers} filters={filters} />;
+  return (
+    <>
+      <Head>
+        <title>FooCar | Deine Anlaufstelle für Autos</title>
+        <meta property='og:title' content='FooCar | Deine Anlaufstelle für Autos' />
+      </Head>
+      <IndexLayout offers={offers} filters={filters} />;
+    </>
+  );
 }
 
 export async function getServerSideProps(): Promise<IndexServerProps> {

@@ -22,9 +22,6 @@ export function Header(): JSX.Element {
       </S.HamburgerContainer>
       <S.Menu isOpen={isOpen}>
         <S.MenuLink>
-          <Anchor href='/random'>Zufälliges Inserat</Anchor>
-        </S.MenuLink>
-        <S.MenuLink>
           <Anchor href='/privacy'>Datenschutz</Anchor>
         </S.MenuLink>
         <S.MenuLink>
