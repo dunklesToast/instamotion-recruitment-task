@@ -6,6 +6,7 @@ export const OfferLayout = styled.div`
   flex-direction: column;
   margin: 64px auto;
   max-width: 1280px;
+  padding: 0 12px;
 `;
 
 export const HeaderContainer = styled.div`
@@ -25,10 +26,9 @@ export const SubHeader = styled(Text)`
 export const GalleryContainer = styled.div`
   align-self: center;
   margin-top: 16px;
-  width: 60%;
+  max-width: 600px;
 `;
 
 export const DetailContainer = styled.div`
   margin-top: 16px;
-  width: 60%;
 `;
