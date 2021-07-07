@@ -34,10 +34,7 @@ export async function getOffer(offerID: string): Promise<CarBasicInfo> {
 
   response = await Cache.getAsync<Filters>(`offer:${offerID}`, true);
 
-  console.log(`redis rep: ${response}`);
-
   if (!response) {
-    console.log('fetching');
     const result = await axios.post('https://im-graphql.instamotion.com/', {
       query: getOfferQuery,
       variables: {

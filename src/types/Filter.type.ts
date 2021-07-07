@@ -25,6 +25,21 @@ export type HTTPFilterBody = {
   price?: string;
 };
 
+export type QueryFilters = {
+  make?: string;
+  model?: string;
+  category?: string;
+  gearbox?: string;
+  fuel?: string;
+  exteriorColor?: string;
+  mileAgeFrom?: string;
+  mileAgeTo?: string;
+  powerFrom?: string;
+  powerTo?: string;
+  priceFrom?: string;
+  priceTo?: string;
+};
+
 export type FormikFilters = {
   make?: string;
   model?: string;

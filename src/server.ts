@@ -16,7 +16,7 @@ if (!(SERVER_PORT && SERVER_HOST)) {
 (async () => {
   const server = fastify({
     logger: Logger,
-    pluginTimeout: 30 * 1000,
+    pluginTimeout: 60 * 1000,
     disableRequestLogging: true,
   });
 

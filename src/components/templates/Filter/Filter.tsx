@@ -3,46 +3,54 @@ import { Button } from '@atoms/Button/Button';
 import { buildFilters } from '@helpers/filterBuilder';
 import { RangeSelect } from '@molecules/RangeSelect/RangeSelect';
 import { Select } from '@molecules/Select/Select';
-import type { Filters, FormikFilters, HTTPFilterBody } from '@type/Filter.type';
+import type { Filters, FormikFilters, HTTPFilterBody, QueryFilters } from '@type/Filter.type';
 import { useFormik } from 'formik';
+import { useRouter } from 'next/router';
 import * as S from './Filter.styled';
 
 export interface FilterBarProps {
   filters: Filters;
   onSubmit: (filters: HTTPFilterBody) => void;
+  queryFilters: QueryFilters;
 }
 
 /**
  * Filter Sidebar
  */
-export function FilterBar({ filters, onSubmit }: FilterBarProps): JSX.Element {
+export function Filter({ filters, onSubmit, queryFilters }: FilterBarProps): JSX.Element {
+  const router = useRouter();
+
+  const update = async (values: FormikFilters): Promise<void> => {
+    const { generatedFilters, queryParams } = buildFilters(values);
+    onSubmit(generatedFilters);
+    await router.push({
+      query: queryParams,
+    });
+  };
+
   const formik = useFormik<FormikFilters>({
     initialValues: {
-      make: undefined,
-      model: undefined,
-      category: undefined,
-      gearbox: undefined,
-      exteriorColor: undefined,
-      fuel: undefined,
+      make: queryFilters.make,
+      model: queryFilters.model,
+      category: queryFilters.category,
+      gearbox: queryFilters.gearbox,
+      exteriorColor: queryFilters.exteriorColor,
+      fuel: queryFilters.fuel,
       mileage: {
-        from: '',
-        to: '',
+        from: queryFilters.mileAgeFrom || '',
+        to: queryFilters.mileAgeTo || '',
       },
       power: {
-        from: '',
-        to: '',
+        from: queryFilters.powerFrom || '',
+        to: queryFilters.powerTo || '',
       },
       price: {
-        from: '',
-        to: '',
+        from: queryFilters.priceFrom || '',
+        to: queryFilters.priceTo || '',
       },
     },
-    onSubmit: (values) => {
-      onSubmit(buildFilters(values));
-    },
-    validate: (values) => {
-      onSubmit(buildFilters(values));
-    },
+    onSubmit: update,
+    validate: update,
     validateOnBlur: true,
   });
 
@@ -51,6 +59,7 @@ export function FilterBar({ filters, onSubmit }: FilterBarProps): JSX.Element {
       <S.Header weight={700}>Filter</S.Header>
       <S.Divider />
       <Select
+        defaultValue={formik.values.make}
         options={filters.make}
         name='make'
         localizedName='Marke'
@@ -61,6 +70,7 @@ export function FilterBar({ filters, onSubmit }: FilterBarProps): JSX.Element {
         <>
           <S.Divider />
           <Select
+            defaultValue={formik.values.model}
             options={filters.model[formik.values.make as unknown as string]}
             name='model'
             localizedName='Modell'
@@ -71,6 +81,7 @@ export function FilterBar({ filters, onSubmit }: FilterBarProps): JSX.Element {
       )}
       <S.Divider />
       <Select
+        defaultValue={formik.values.category}
         options={filters.category}
         name='category'
         localizedName='Kategorie'
@@ -79,6 +90,7 @@ export function FilterBar({ filters, onSubmit }: FilterBarProps): JSX.Element {
       />
       <S.Divider />
       <Select
+        defaultValue={formik.values.gearbox}
         options={filters.gearbox}
         name='category'
         localizedName='Schaltung'
@@ -87,6 +99,7 @@ export function FilterBar({ filters, onSubmit }: FilterBarProps): JSX.Element {
       />
       <S.Divider />
       <Select
+        defaultValue={formik.values.exteriorColor}
         options={filters.exteriorColor}
         name='exteriorColor'
         localizedName='Farbe'
@@ -95,6 +108,7 @@ export function FilterBar({ filters, onSubmit }: FilterBarProps): JSX.Element {
       />
       <S.Divider />
       <Select
+        defaultValue={formik.values.fuel}
         options={filters.fuel}
         name='fuel'
         localizedName='Kraftstoff'
