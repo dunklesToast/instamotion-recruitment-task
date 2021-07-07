@@ -38,6 +38,7 @@ module.exports = {
           ['@style', './src/style/'],
           ['@templates', './src/components/templates/'],
           ['@type', './src/types/'],
+          ['@mockdata', './src/mockdata/'],
         ],
         extensions: ['.ts', '.tsx', '.js', '.jsx', '.json'],
       },
