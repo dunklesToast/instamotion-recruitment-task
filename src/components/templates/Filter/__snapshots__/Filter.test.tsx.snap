@@ -110,6 +110,271 @@ exports[`Filter 1`] = `
     >
       Marke auswählen
     </option>
+    <option
+      value="ALPINA"
+    >
+      ALPINA
+    </option>
+    <option
+      value="Abarth"
+    >
+      Abarth
+    </option>
+    <option
+      value="Alfa Romeo"
+    >
+      Alfa Romeo
+    </option>
+    <option
+      value="Aston Martin"
+    >
+      Aston Martin
+    </option>
+    <option
+      value="Audi"
+    >
+      Audi
+    </option>
+    <option
+      value="BMW"
+    >
+      BMW
+    </option>
+    <option
+      value="Bentley"
+    >
+      Bentley
+    </option>
+    <option
+      value="Bugatti"
+    >
+      Bugatti
+    </option>
+    <option
+      value="Cadillac"
+    >
+      Cadillac
+    </option>
+    <option
+      value="Chrysler"
+    >
+      Chrysler
+    </option>
+    <option
+      value="Citroën"
+    >
+      Citroën
+    </option>
+    <option
+      value="Corvette"
+    >
+      Corvette
+    </option>
+    <option
+      value="Cupra"
+    >
+      Cupra
+    </option>
+    <option
+      value="Dacia"
+    >
+      Dacia
+    </option>
+    <option
+      value="Dodge"
+    >
+      Dodge
+    </option>
+    <option
+      value="Ferrari"
+    >
+      Ferrari
+    </option>
+    <option
+      value="Fiat"
+    >
+      Fiat
+    </option>
+    <option
+      value="Ford"
+    >
+      Ford
+    </option>
+    <option
+      value="Honda"
+    >
+      Honda
+    </option>
+    <option
+      value="Hummer"
+    >
+      Hummer
+    </option>
+    <option
+      value="Hyundai"
+    >
+      Hyundai
+    </option>
+    <option
+      value="Infiniti"
+    >
+      Infiniti
+    </option>
+    <option
+      value="Jaguar"
+    >
+      Jaguar
+    </option>
+    <option
+      value="Jeep"
+    >
+      Jeep
+    </option>
+    <option
+      value="Kia"
+    >
+      Kia
+    </option>
+    <option
+      value="Lada"
+    >
+      Lada
+    </option>
+    <option
+      value="Lamborghini"
+    >
+      Lamborghini
+    </option>
+    <option
+      value="Lancia"
+    >
+      Lancia
+    </option>
+    <option
+      value="Land Rover"
+    >
+      Land Rover
+    </option>
+    <option
+      value="Lexus"
+    >
+      Lexus
+    </option>
+    <option
+      value="Lotus"
+    >
+      Lotus
+    </option>
+    <option
+      value="MINI"
+    >
+      MINI
+    </option>
+    <option
+      value="Maserati"
+    >
+      Maserati
+    </option>
+    <option
+      value="Mazda"
+    >
+      Mazda
+    </option>
+    <option
+      value="McLaren"
+    >
+      McLaren
+    </option>
+    <option
+      value="Mercedes-Benz"
+    >
+      Mercedes-Benz
+    </option>
+    <option
+      value="Mitsubishi"
+    >
+      Mitsubishi
+    </option>
+    <option
+      value="Nissan"
+    >
+      Nissan
+    </option>
+    <option
+      value="Opel"
+    >
+      Opel
+    </option>
+    <option
+      value="Peugeot"
+    >
+      Peugeot
+    </option>
+    <option
+      value="Porsche"
+    >
+      Porsche
+    </option>
+    <option
+      value="Renault"
+    >
+      Renault
+    </option>
+    <option
+      value="Rolls-Royce"
+    >
+      Rolls-Royce
+    </option>
+    <option
+      value="Seat"
+    >
+      Seat
+    </option>
+    <option
+      value="Skoda"
+    >
+      Skoda
+    </option>
+    <option
+      value="Smart"
+    >
+      Smart
+    </option>
+    <option
+      value="Ssangyong"
+    >
+      Ssangyong
+    </option>
+    <option
+      value="Subaru"
+    >
+      Subaru
+    </option>
+    <option
+      value="Suzuki"
+    >
+      Suzuki
+    </option>
+    <option
+      value="Tesla"
+    >
+      Tesla
+    </option>
+    <option
+      value="Toyota"
+    >
+      Toyota
+    </option>
+    <option
+      value="Volkswagen"
+    >
+      Volkswagen
+    </option>
+    <option
+      value="Volvo"
+    >
+      Volvo
+    </option>
   </select>
   <hr
     class="c3"
@@ -128,6 +393,51 @@ exports[`Filter 1`] = `
       value=""
     >
       Kategorie auswählen
+    </option>
+    <option
+      value="Cabrio"
+    >
+      Cabrio
+    </option>
+    <option
+      value="EstateCar"
+    >
+      EstateCar
+    </option>
+    <option
+      value="Limousine"
+    >
+      Limousine
+    </option>
+    <option
+      value="OffRoad"
+    >
+      OffRoad
+    </option>
+    <option
+      value="SmallCar"
+    >
+      SmallCar
+    </option>
+    <option
+      value="SportsCar"
+    >
+      SportsCar
+    </option>
+    <option
+      value="Transporter"
+    >
+      Transporter
+    </option>
+    <option
+      value="Van"
+    >
+      Van
+    </option>
+    <option
+      value="OtherCar"
+    >
+      OtherCar
     </option>
   </select>
   <hr
@@ -148,6 +458,21 @@ exports[`Filter 1`] = `
     >
       Schaltung auswählen
     </option>
+    <option
+      value="AUTOMATIC_GEAR"
+    >
+      AUTOMATIC_GEAR
+    </option>
+    <option
+      value="MANUAL_GEAR"
+    >
+      MANUAL_GEAR
+    </option>
+    <option
+      value="SEMIAUTOMATIC_GEAR"
+    >
+      SEMIAUTOMATIC_GEAR
+    </option>
   </select>
   <hr
     class="c3"
@@ -167,6 +492,71 @@ exports[`Filter 1`] = `
     >
       Farbe auswählen
     </option>
+    <option
+      value="BEIGE"
+    >
+      BEIGE
+    </option>
+    <option
+      value="BLACK"
+    >
+      BLACK
+    </option>
+    <option
+      value="BLUE"
+    >
+      BLUE
+    </option>
+    <option
+      value="BROWN"
+    >
+      BROWN
+    </option>
+    <option
+      value="GOLD"
+    >
+      GOLD
+    </option>
+    <option
+      value="GREEN"
+    >
+      GREEN
+    </option>
+    <option
+      value="GREY"
+    >
+      GREY
+    </option>
+    <option
+      value="ORANGE"
+    >
+      ORANGE
+    </option>
+    <option
+      value="PURPLE"
+    >
+      PURPLE
+    </option>
+    <option
+      value="RED"
+    >
+      RED
+    </option>
+    <option
+      value="SILVER"
+    >
+      SILVER
+    </option>
+    <option
+      value="WHITE"
+    >
+      WHITE
+    </option>
+    <option
+      value="YELLOW"
+    >
+      YELLOW
+    </option>
   </select>
   <hr
     class="c3"
@@ -185,6 +575,61 @@ exports[`Filter 1`] = `
       value=""
     >
       Kraftstoff auswählen
+    </option>
+    <option
+      value="CNG"
+    >
+      CNG
+    </option>
+    <option
+      value="DIESEL"
+    >
+      DIESEL
+    </option>
+    <option
+      value="ELECTRICITY"
+    >
+      ELECTRICITY
+    </option>
+    <option
+      value="ETHANOL"
+    >
+      ETHANOL
+    </option>
+    <option
+      value="GAS"
+    >
+      GAS
+    </option>
+    <option
+      value="HYBRID"
+    >
+      HYBRID
+    </option>
+    <option
+      value="HYBRID_DIESEL"
+    >
+      HYBRID_DIESEL
+    </option>
+    <option
+      value="HYDROGENIUM"
+    >
+      HYDROGENIUM
+    </option>
+    <option
+      value="LPG"
+    >
+      LPG
+    </option>
+    <option
+      value="PETROL"
+    >
+      PETROL
+    </option>
+    <option
+      value="OTHER"
+    >
+      OTHER
     </option>
   </select>
   <hr
@@ -289,4 +734,86 @@ exports[`Filter 1`] = `
     </p>
   </button>
 </div>
+`;
+
+exports[`Filter 2`] = `
+"Snapshot Diff:
+- First value
++ Second value
+
+@@ -296,10 +296,74 @@
+        class=\\"sc-iCoGMd bUWOXY\\"
+      />
+      <p
+        class=\\"sc-bdnxRM unsaO\\"
+      >
++       Modell
++     </p>
++     <select
++       class=\\"sc-eCApnc fNDMcy\\"
++       data-testid=\\"select\\"
++       name=\\"model\\"
++     >
++       <option
++         value=\\"\\"
++       >
++         Modell auswählen
++       </option>
++       <option
++         value=\\"B3\\"
++       >
++         B3
++       </option>
++       <option
++         value=\\"B4\\"
++       >
++         B4
++       </option>
++       <option
++         value=\\"B6\\"
++       >
++         B6
++       </option>
++       <option
++         value=\\"B7\\"
++       >
++         B7
++       </option>
++       <option
++         value=\\"D3\\"
++       >
++         D3
++       </option>
++       <option
++         value=\\"D4\\"
++       >
++         D4
++       </option>
++       <option
++         value=\\"D5\\"
++       >
++         D5
++       </option>
++       <option
++         value=\\"Roadster S\\"
++       >
++         Roadster S
++       </option>
++       <option
++         value=\\"XD3\\"
++       >
++         XD3
++       </option>
++     </select>
++     <hr
++       class=\\"sc-iCoGMd bUWOXY\\"
++     />
++     <p
++       class=\\"sc-bdnxRM unsaO\\"
++     >
+        Kategorie
+      </p>
+      <select
+        class=\\"sc-eCApnc fNDMcy\\"
+        data-testid=\\"select\\""
 `;

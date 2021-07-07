@@ -24,7 +24,8 @@
       "@templates": ["src/components/templates/"],
       "@templates/*": ["src/components/templates/*"],
       "@type": ["src/types/"],
-      "@type/*": ["src/types/*"]
+      "@type/*": ["src/types/*"],
+      "@mockdata/*": ["src/mockdata/*"]
     },
     "allowJs": true,
     "strict": false,

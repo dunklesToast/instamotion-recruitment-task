@@ -10,6 +10,7 @@ module.exports = {
     '@style/(.*)': '<rootDir>/src/style/$1',
     '@templates/(.*)': '<rootDir>/src/components/templates/$1',
     '@type/(.*)': '<rootDir>/src/types/$1',
+    '@mockdata/(.*)': '<rootDir>/src/mockdata/$1',
   },
   testEnvironment: 'jsdom',
   collectCoverage: true,

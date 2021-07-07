@@ -26,3 +26,29 @@ exports[`Select 1`] = `
   </option>
 </select>
 `;
+
+exports[`Select 2`] = `
+"Snapshot Diff:
+- First value
++ Second value
+
+@@ -8,16 +8,11 @@
+      class=\\"sc-gtsrHT eubtgm\\"
+      data-testid=\\"select\\"
+      name=\\"test\\"
+    >
+      <option
+-       value=\\"a\\"
+-     >
+-       a
+-     </option>
+-     <option
+-       value=\\"b\\"
++       value=\\"\\"
+      >
+-       b
++       Test auswählen
+      </option>
+    </select>
+  </DocumentFragment>"
+`;

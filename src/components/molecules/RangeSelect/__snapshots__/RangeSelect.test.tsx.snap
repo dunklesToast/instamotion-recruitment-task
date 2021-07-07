@@ -32,7 +32,7 @@ exports[`RangeSelect 1`] = `
     class="c1"
     placeholder="von"
     type="text"
-    value="5"
+    value=""
   />
   <span
     class="c2"
@@ -43,7 +43,7 @@ exports[`RangeSelect 1`] = `
     class="c1"
     placeholder="bis"
     type="text"
-    value="10"
+    value=""
   />
 </div>
 `;
