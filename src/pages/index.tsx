@@ -20,7 +20,7 @@ export default function Index({ offers, filters }: IndexServerProps['props']): J
         <title>FooCar | Deine Anlaufstelle für Autos</title>
         <meta property='og:title' content='FooCar | Deine Anlaufstelle für Autos' />
       </Head>
-      <IndexLayout offers={offers} filters={filters} />;
+      <IndexLayout offers={offers} filters={filters} />
     </>
   );
 }
