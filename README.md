@@ -1,6 +1,11 @@
 # InstaMotion Recruitment Task
 
-Link to Task: [instamotion/recruitment-task](https://github.com/Instamotion/recruitment-task/commit/cfcaa41ce3ce32bbf872fbc0d00809fc06a992e4#diff-661cdfab660d6d8bee56e58f778ed3458731f13667977b3575e37b9a2d0f10aa)
+Link to the task: [instamotion/recruitment-task](https://github.com/Instamotion/recruitment-task/blob/main/docs/frontend.md)
+
+### Links
+
+- [Frontend](https://demo.im.dunklestoast.de/)
+- [Storybook](https://sb.im.dunklestoast.de/)
 
 ### Requirements
 
