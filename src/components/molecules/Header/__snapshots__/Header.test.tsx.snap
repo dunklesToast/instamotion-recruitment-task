@@ -179,16 +179,6 @@ exports[`Header: closed 1`] = `
     >
       <a
         class="c6"
-        href="/random"
-      >
-        Zufälliges Inserat
-      </a>
-    </div>
-    <div
-      class="c5"
-    >
-      <a
-        class="c6"
         href="/privacy"
       >
         Datenschutz
