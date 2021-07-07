@@ -15,8 +15,6 @@ services:
       - server
     links:
       - server
-    ports:
-      - 1337:80
     networks:
       - instamotion
       - web
