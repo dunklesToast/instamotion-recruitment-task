@@ -17,6 +17,7 @@ exports[`OfferTemplate 1`] = `
   flex-direction: column;
   margin: 64px auto;
   max-width: 1280px;
+  padding: 0 12px;
 }
 
 .c1 {
@@ -43,12 +44,11 @@ exports[`OfferTemplate 1`] = `
   -ms-flex-item-align: center;
   align-self: center;
   margin-top: 16px;
-  width: 60%;
+  max-width: 600px;
 }
 
 .c6 {
   margin-top: 16px;
-  width: 60%;
 }
 
 <div
