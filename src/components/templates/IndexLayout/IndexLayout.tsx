@@ -1,9 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import { Text } from '@atoms/Text/Text';
-import { FilterBar } from '@templates/Filter/FilterBar';
+import { getQueryParams } from '@helpers/getQueryParams';
+import { queryFilterToHTTPFilter } from '@helpers/queryFilterToHTTPFilter';
+import { Filter } from '@templates/Filter/Filter';
 import { makeRequest } from '@templates/IndexLayout/IndexLayout.helpers';
 import type { CarBasicInfo } from '@type/Car.type';
 import type { HTTPFilterBody } from '@type/Filter.type';
+import { useRouter } from 'next/router';
 import type { IndexServerProps } from '../../../pages';
 import * as S from './IndexLayout.styled';
 
@@ -15,7 +18,9 @@ export function IndexLayout({ offers, filters }: IndexServerProps['props']): JSX
   const [isLoading, setLoading] = useState(false);
   const [hasMore, setHasMore] = useState(true);
   const [page, setPage] = useState(1);
-  const [filter, setFilter] = useState<HTTPFilterBody>({});
+  const router = useRouter();
+  const parsedQuery = getQueryParams(router.query);
+  const [filter, setFilter] = useState<HTTPFilterBody>(queryFilterToHTTPFilter(parsedQuery));
 
   /** Intersection Observer and Infinite Scroll Logic */
   useEffect(() => {
@@ -55,7 +60,7 @@ export function IndexLayout({ offers, filters }: IndexServerProps['props']): JSX
         observer.unobserve(lastTile);
       }
     };
-  }, [filter, isLoading, page, hasMore]);
+  }, [filter, hasMore, isLoading, page]);
 
   const handleFilter = (selectedFilters: HTTPFilterBody) => {
     setLoading(true);
@@ -71,9 +76,10 @@ export function IndexLayout({ offers, filters }: IndexServerProps['props']): JSX
   return (
     <S.IndexLayout>
       <S.FilterContainer>
-        <FilterBar
+        <Filter
           filters={filters}
           onSubmit={(selectedFilters) => handleFilter(selectedFilters)}
+          queryFilters={parsedQuery}
         />
       </S.FilterContainer>
       <S.ResultsContainer>

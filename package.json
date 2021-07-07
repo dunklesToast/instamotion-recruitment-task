@@ -8,10 +8,10 @@
   "private": true,
   "scripts": {
     "watch:sb": "yarn start-storybook -p 9009 -s ./public/",
-    "watch:dc": "docker compose -p imDev -f .docker/development/docker-compose.yml up",
-    "watch": "NODE_ENV=development ts-node -r tsconfig-paths/register -r dotenv/config src/server.ts",
+    "watch:dc": "docker-compose -p imDev -f .docker/development/docker-compose.yml up",
+    "watch": "NODE_ENV=development LOG_LEVEL=debug ts-node -r tsconfig-paths/register -r dotenv/config src/server.ts",
     "start": "ts-node -T -r tsconfig-paths/register -r dotenv/config src/server.ts",
-    "start:dc": "docker compose -p improd -f .docker/production/docker-compose.yml up",
+    "start:dc": "docker-compose -p improd -f .docker/production/docker-compose.yml up",
     "test": "jest",
     "postinstall": "husky install",
     "build": "yarn next build",

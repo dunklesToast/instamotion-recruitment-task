@@ -7,7 +7,7 @@ import { routes as getFilters } from './routes/filters';
 import { routes as getOffers } from './routes/offers';
 import { routes as getOffer } from './routes/offers/byId';
 
-const { NODE_ENV, SERVER_HOST, SERVER_PORT } = process.env;
+const { NODE_ENV, SERVER_HOST = '0.0.0.0', SERVER_PORT = '1337' } = process.env;
 
 if (!(SERVER_PORT && SERVER_HOST)) {
   throw new Error('Missing fastify configuration.');
@@ -16,7 +16,7 @@ if (!(SERVER_PORT && SERVER_HOST)) {
 (async () => {
   const server = fastify({
     logger: Logger,
-    pluginTimeout: 30 * 1000,
+    pluginTimeout: 60 * 1000,
     disableRequestLogging: true,
   });
 

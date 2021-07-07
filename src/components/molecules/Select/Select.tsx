@@ -14,6 +14,8 @@ export interface SelectProps {
   initField?: boolean;
   /** onChange Listener */
   onChange: ChangeEventHandler<HTMLSelectElement>;
+  /** Optional, preselected, value */
+  defaultValue?: string;
 }
 
 /**
@@ -25,11 +27,12 @@ export function Select({
   initField,
   onChange,
   localizedName,
+  defaultValue,
 }: SelectProps): JSX.Element | null {
   return (
     <>
       <Text weight={700}>{localizedName}</Text>
-      <S.Select onChange={onChange} name={name} data-testid='select'>
+      <S.Select onChange={onChange} name={name} defaultValue={defaultValue} data-testid='select'>
         {initField ? <option value=''>{localizedName} auswählen</option> : null}
         {options.map((option, key) => {
           if (option === '') {
