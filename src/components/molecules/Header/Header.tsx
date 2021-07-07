@@ -22,10 +22,10 @@ export function Header(): JSX.Element {
       </S.HamburgerContainer>
       <S.Menu isOpen={isOpen}>
         <S.MenuLink>
-          <Anchor href='/privacy'>Datenschutz</Anchor>
+          <Anchor href='#privacy'>Datenschutz</Anchor>
         </S.MenuLink>
         <S.MenuLink>
-          <Anchor href='/imprint'>Impressum</Anchor>
+          <Anchor href='#imprint'>Impressum</Anchor>
         </S.MenuLink>
       </S.Menu>
     </S.HeaderContainer>

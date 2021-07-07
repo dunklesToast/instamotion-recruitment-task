@@ -179,7 +179,7 @@ exports[`Header: closed 1`] = `
     >
       <a
         class="c6"
-        href="/privacy"
+        href="/#privacy"
       >
         Datenschutz
       </a>
@@ -189,7 +189,7 @@ exports[`Header: closed 1`] = `
     >
       <a
         class="c6"
-        href="/imprint"
+        href="/#imprint"
       >
         Impressum
       </a>
