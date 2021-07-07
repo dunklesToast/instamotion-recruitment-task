@@ -11,7 +11,8 @@ export default {
 
 const FilterComponent: Story<FilterBarProps> = (args) => (
   <div style={{ width: 300 }}>
-    <Filter {...args} />
+    {/* eslint-disable-next-line @typescript-eslint/no-empty-function */}
+    <Filter filters={args.filters} queryFilters={{}} onSubmit={() => {}} />
   </div>
 );
 
