@@ -29,6 +29,7 @@ services:
     build:
       context: ../..
       dockerfile: .docker/Server.Dockerfile
+    restart: unless-stopped
     networks:
       - instamotion
     depends_on:
@@ -41,6 +42,7 @@ services:
       LOG_LEVEL: info
       NODE_ENV: production
   storybook:
+    restart: unless-stopped
     build:
       context: ../..
       dockerfile: .docker/Storybook.Dockerfile
